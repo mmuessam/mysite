@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Block agents that scrape for AI training without consent (optional)
+# Uncomment if desired:
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: ClaudeBot
+# Disallow: /
+
+# Sitemap
+Sitemap: https://mahmoudessam.com/sitemap.xml
