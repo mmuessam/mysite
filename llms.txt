@@ -1,0 +1,55 @@
+# Mahmoud Essam
+
+> Product Design Lead and PM (محمود عصام) with 8+ years designing AI-powered platforms, ERP systems and B2B SaaS for enterprise and government teams across the Gulf. Based in Giza, Egypt, working across Saudi Arabia and the GCC. Currently Product Design Lead at Wakeb. Builder of Taskatk and BrandScan.
+
+Mahmoud designs decisions, not just screens: UX strategy, complex flows and design systems for high-density operational products, with product management and business analysis in the same hands. He works with a few teams at a time and goes deep into the problem, the user and the business. 50+ clients, 6+ companies.
+
+## Practices
+
+- Product Design: UX strategy, complex flows, information architecture and scalable design systems. UX research, flows, wireframing, prototyping, design systems, IA.
+- Product Management: PRDs, roadmaps, prioritising with MoSCoW and aligning stakeholders end to end. Product strategy, roadmapping, SRS and PRD, Agile and Scrum.
+- Business Analysis: requirements, market mapping, competitive research, KPI definition and RACI matrices.
+- AI and Workflow: human-AI interaction patterns, AI-assisted design workflows and prompt-engineered tooling.
+
+## Experience
+
+- Product Design Lead at Wakeb (2021 to now), Saudi Arabia, AI and data: end-to-end product design for AI-driven enterprise platforms for government and enterprise clients in the GCC; mentoring the design team.
+- Design Director at PixellCode (2023 to 2025), Egypt and GCC: founded and scaled an agency delivering SaaS, ERP, fintech and marketplace products.
+- Senior Product Designer at Node (2025, 6 months), Saudi Arabia.
+- Senior Product Designer at Arweqah (2025, 5 months), Saudi Arabia.
+- Product Designer at uxarabia (2024, 4 months), Amman, Jordan.
+- UI Designer at AKANH Advertising (2021, 1 year), Saudi Arabia.
+- UI/UX Designer, freelance (2019 to 2021), across Egypt, Saudi Arabia and the UAE.
+
+## Products he built
+
+- [Taskatk](https://taskatk.app): project and task management for teams, with a built-in AI assistant.
+- [BrandScan](https://brandscan.tools/): website design, tech stack and SEO analyzer.
+
+## Selected work
+
+- YamYam (Food delivery · Website): YamYam food delivery website with menu offers and app download.
+- Commerce Admin (Orders & products): Arabic commerce dashboard with product details and order list.
+- Services Portal (Website · Arabic): Arabic services portal website with a city skyline hero.
+- Plans & Pricing (Subscription website): Subscription website with plan comparison cards.
+- Agency Website (Digital agency): Dark digital agency website with a product vision hero.
+- Brand Website (Editorial): Editorial brand website with case study cards.
+- Ordering App (Mobile · Arabic): Arabic mobile ordering app screens in red.
+- Tutoring App (Education · Mobile): Landing page for a tutoring app that connects teachers and students.
+- Innovation Landing (Landing page): Dark landing page with a glowing innovation hero.
+- Platform Website (Website · Arabic): Arabic platform website with a dark blue hero.
+- SaaS Landing (SaaS · Arabic): Arabic SaaS landing page presenting a control dashboard.
+- Operations Dashboard (Data tables): Operations dashboard with dense data tables and KPI cards.
+- Progress App (Mobile · Arabic): Arabic mobile app screens with progress gauges.
+- Analytics Dashboard (KPIs & charts): Arabic analytics dashboard with bar charts and KPI gauges.
+- Admin Panel (Workflows): Admin panel with a task list and side navigation.
+- Speed Service (On-demand services): Speed Service, an on-demand home services mobile app.
+- 360 Business Partners (Education & mentorship): 360 Business Partners, an education and mentorship platform.
+- Property Listings (Real estate search): Property rental website with listings and search.
+
+## Contact
+
+- Website: https://mahmoudessam.com/
+- Email: mau.essam@gmail.com
+- WhatsApp: https://wa.me/201122133412
+- LinkedIn: https://www.linkedin.com/in/mmuessam

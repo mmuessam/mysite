@@ -1,36 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mahmoudessam.com/</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-03</lastmod>
     <image:image>
-      <image:loc>https://mahmoudessam.com/og-image-v2.png</image:loc>
-      <image:title>Mahmoud Essam — Product Design Lead</image:title>
-      <image:caption>Product Designer &amp; PM building AI-powered products for the Gulf.</image:caption>
+      <image:loc>https://mahmoudessam.com/og-cover.png</image:loc>
+      <image:title>Mahmoud Essam, Product Design Lead</image:title>
+      <image:caption>Designing AI-powered products and enterprise software for the Gulf.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://mahmoudessam.com/#about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mahmoudessam.com/#projects</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mahmoudessam.com/#testimonials</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mahmoudessam.com/#contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-01.png</image:loc>
+      <image:title>YamYam by Mahmoud Essam</image:title>
+      <image:caption>YamYam food delivery website with menu offers and app download. Food delivery · Website.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-02.png</image:loc>
+      <image:title>Commerce Admin by Mahmoud Essam</image:title>
+      <image:caption>Arabic commerce dashboard with product details and order list. Orders &amp; products.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-03.png</image:loc>
+      <image:title>Services Portal by Mahmoud Essam</image:title>
+      <image:caption>Arabic services portal website with a city skyline hero. Website · Arabic.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-04.png</image:loc>
+      <image:title>Plans &amp; Pricing by Mahmoud Essam</image:title>
+      <image:caption>Subscription website with plan comparison cards. Subscription website.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-05.png</image:loc>
+      <image:title>Agency Website by Mahmoud Essam</image:title>
+      <image:caption>Dark digital agency website with a product vision hero. Digital agency.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-06.png</image:loc>
+      <image:title>Brand Website by Mahmoud Essam</image:title>
+      <image:caption>Editorial brand website with case study cards. Editorial.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-07.png</image:loc>
+      <image:title>Ordering App by Mahmoud Essam</image:title>
+      <image:caption>Arabic mobile ordering app screens in red. Mobile · Arabic.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-08.png</image:loc>
+      <image:title>Tutoring App by Mahmoud Essam</image:title>
+      <image:caption>Landing page for a tutoring app that connects teachers and students. Education · Mobile.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-09.png</image:loc>
+      <image:title>Innovation Landing by Mahmoud Essam</image:title>
+      <image:caption>Dark landing page with a glowing innovation hero. Landing page.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-10.png</image:loc>
+      <image:title>Platform Website by Mahmoud Essam</image:title>
+      <image:caption>Arabic platform website with a dark blue hero. Website · Arabic.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-11.png</image:loc>
+      <image:title>SaaS Landing by Mahmoud Essam</image:title>
+      <image:caption>Arabic SaaS landing page presenting a control dashboard. SaaS · Arabic.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-12.png</image:loc>
+      <image:title>Operations Dashboard by Mahmoud Essam</image:title>
+      <image:caption>Operations dashboard with dense data tables and KPI cards. Data tables.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-13.png</image:loc>
+      <image:title>Progress App by Mahmoud Essam</image:title>
+      <image:caption>Arabic mobile app screens with progress gauges. Mobile · Arabic.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-14.png</image:loc>
+      <image:title>Analytics Dashboard by Mahmoud Essam</image:title>
+      <image:caption>Arabic analytics dashboard with bar charts and KPI gauges. KPIs &amp; charts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-15.png</image:loc>
+      <image:title>Admin Panel by Mahmoud Essam</image:title>
+      <image:caption>Admin panel with a task list and side navigation. Workflows.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-16.png</image:loc>
+      <image:title>Speed Service by Mahmoud Essam</image:title>
+      <image:caption>Speed Service, an on-demand home services mobile app. On-demand services.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-17.png</image:loc>
+      <image:title>360 Business Partners by Mahmoud Essam</image:title>
+      <image:caption>360 Business Partners, an education and mentorship platform. Education &amp; mentorship.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mahmoudessam.com/projects/p-18.png</image:loc>
+      <image:title>Property Listings by Mahmoud Essam</image:title>
+      <image:caption>Property rental website with listings and search. Real estate search.</image:caption>
+    </image:image>
   </url>
 </urlset>
