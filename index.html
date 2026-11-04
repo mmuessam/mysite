@@ -72,7 +72,7 @@
 ============================================ -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Geist+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Geist+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 
 <!-- ============================================
      STRUCTURED DATA: one connected graph
@@ -592,8 +592,8 @@
     --accent-soft: #ff8478;
     --chip-bg: rgba(242, 93, 79, 0.16);   /* brand coral, same as the logo and the contact headline */
     --chip-text: #ff8478;
-    --display: 'Poppins', system-ui, -apple-system, sans-serif;
-    --sans: 'Poppins', system-ui, -apple-system, sans-serif;
+    --display: 'Space Grotesk', system-ui, -apple-system, sans-serif;   /* headings, same as the BrandScan landing */
+    --sans: 'Manrope', system-ui, -apple-system, sans-serif;            /* body, same as the BrandScan landing */
     --mono: 'Geist Mono', ui-monospace, 'SF Mono', monospace;
     --side-w: clamp(360px, 30vw, 440px);
     --ease: cubic-bezier(0.16, 1, 0.3, 1);
@@ -856,7 +856,7 @@
      WORK COLUMN: one item per row, everything stacked
   ============================================ */
   .work { position: relative; z-index: 1; padding: 24px 20px 0; }
-  .work__inner { max-width: 1080px; }
+  .work__inner { max-width: 1080px; margin: 0 auto; }   /* centred in the space beside the sidebar on wide screens */
   .sec { padding-bottom: 120px; scroll-margin-top: 40px; }
   .sec__head {
     display: flex; align-items: baseline; justify-content: space-between; gap: 24px;
@@ -1172,7 +1172,7 @@
       <span><b>Mahmoud Essam</b><small>Product Design Lead</small></span>
     </a>
 
-    <p class="side__title title-stack" id="sideTitle"><span class="title-stack__live" id="sideLive">designing AI-powered products and enterprise software for the Gulf</span></p>
+    <p class="side__title title-stack" id="sideTitle"><span class="sr-only">designing AI-powered products and enterprise software for the Gulf</span><span class="title-stack__live" aria-hidden="true"><span id="sideTyped">designing AI-powered products and enterprise software for the Gulf</span><span class="caret">_</span></span></p>
 
     <p class="lead"><b class="hl">Mahmoud Essam</b> is a <b class="hl">Product Design Lead &amp; PM</b> for AI-native and enterprise teams, designing <span class="chip">decisions</span>, not just screens.</p>
 
@@ -1684,9 +1684,10 @@
 
   /* ============================================
      INTRO: the headline types a sentence, holds it, erases it and types the next.
+     The sidebar title runs the same cycle once the intro docks into it.
      The rest of the intro fades in after the first sentence.
   ============================================ */
-  var typed = $('typed'), sideLive = $('sideLive');
+  var typed = $('typed'), sideTyped = $('sideTyped');
   var PHRASES = [
     typed.textContent,
     'turning complex ERP workflows into AI assistants teams trust',
@@ -1703,14 +1704,14 @@
     });
   }
   addSizers($('introTitle'), true);
-  addSizers($('sideTitle'), false);
+  addSizers($('sideTitle'), true);
 
   var phraseIdx = 0, charIdx = PHRASES[0].length, typingTimer = 0;
   var TYPE_MS = [22, 38], ERASE_MS = [14, 12], HOLD_MS = 2800, GAP_MS = 380;
-  function showChars(n) { charIdx = n; typed.textContent = PHRASES[phraseIdx].slice(0, n); }
-  // Only spend effort while the headline can be seen.
-  function introOnScreen() {
-    if (dockable.matches) return !root.classList.contains('is-docked');
+  function showChars(n) { charIdx = n; typed.textContent = sideTyped.textContent = PHRASES[phraseIdx].slice(0, n); }
+  // Only spend effort while a title can be seen: on desktop one of the two always is.
+  function titleOnScreen() {
+    if (dockable.matches) return true;
     return $('top').getBoundingClientRect().bottom > 80;
   }
   function typeStep() {
@@ -1723,7 +1724,7 @@
     typingTimer = setTimeout(eraseStep, HOLD_MS);
   }
   function eraseStep() {
-    if (!introOnScreen()) { typingTimer = setTimeout(eraseStep, 600); return; }
+    if (!titleOnScreen()) { typingTimer = setTimeout(eraseStep, 600); return; }
     if (charIdx > 0) {
       showChars(charIdx - 1);
       typingTimer = setTimeout(eraseStep, ERASE_MS[0] + Math.random() * ERASE_MS[1]);
@@ -1732,18 +1733,13 @@
     phraseIdx = (phraseIdx + 1) % PHRASES.length;
     typingTimer = setTimeout(typeStep, GAP_MS);
   }
-  // Docking: complete the sentence on screen and carry it into the sidebar title,
-  // so the headline flies into matching text. Undocking picks the cycle up again.
-  function freezeTitle() {
+  // Docking either way: complete the sentence so the headline flies into matching
+  // text, hold it while the move settles, then carry on the cycle in the new spot.
+  function settleTitle() {
     clearTimeout(typingTimer);
     showChars(PHRASES[phraseIdx].length);
-    sideLive.textContent = PHRASES[phraseIdx];
     root.classList.add('is-ready');
-  }
-  function resumeTitle() {
-    if (reduceMotion) return;
-    clearTimeout(typingTimer);
-    typingTimer = setTimeout(eraseStep, HOLD_MS);
+    if (!reduceMotion) typingTimer = setTimeout(eraseStep, HOLD_MS);
   }
   if (reduceMotion) {
     root.classList.add('is-ready');
@@ -1903,7 +1899,7 @@
     if (root.classList.contains('is-docked') === on) return;
     holdBackground(900);
     root.classList.toggle('is-docked', on);
-    if (on) freezeTitle(); else resumeTitle();
+    settleTitle();
     tip.classList.remove('is-on');
     kickLogos();
   }
